@@ -1,0 +1,17 @@
+name: Validate
+# Runs on every push and pull request with a read-only token and no secrets.
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Python compiles, no secret committed, no broken link
+        run: python3 -I .github/scripts/check_repo.py
