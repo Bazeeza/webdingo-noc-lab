@@ -1,0 +1,21 @@
+md webdingo.ca zimbraAutoProvAccountNameMap "samAccountName"
+md webdingo.ca +zimbraAutoProvAttrMap description=description
+md webdingo.ca +zimbraAutoProvAttrMap displayName=displayName
+md webdingo.ca +zimbraAutoProvAttrMap givenName=givenName
+md webdingo.ca +zimbraAutoProvAttrMap cn=cn
+md webdingo.ca +zimbraAutoProvAttrMap sn=sn
+md webdingo.ca +zimbraAutoProvAttrMap mail=mail
+md webdingo.ca zimbraAutoProvAuthMech LDAP
+md webdingo.ca zimbraAutoProvBatchSize 40
+md webdingo.ca zimbraAutoProvLdapAdminBindDn "CN=<COMPTE_DE_SERVICE>,CN=Users,DC=webdingo,DC=ca"
+md webdingo.ca zimbraAutoProvLdapAdminBindPassword "<MOT_DE_PASSE_DU_COMPTE_DE_SERVICE>"
+md webdingo.ca zimbraAutoProvLdapBindDn "CN=<COMPTE_DE_SERVICE>,CN=Users,DC=webdingo,DC=ca"
+md webdingo.ca zimbraAutoProvLdapSearchBase "DC=webdingo,DC=ca"
+md webdingo.ca zimbraAutoProvLdapSearchFilter "(&(objectCategory=person)(objectClass=user))"
+md webdingo.ca zimbraAutoProvLdapURL "ldap://192.168.5.50:389"
+md webdingo.ca zimbraAutoProvMode EAGER
+md webdingo.ca zimbraAutoProvNotificationBody "Votre compte de messagerie WebDingo a été créé automatiquement. Votre adresse est : ${ACCOUNT_ADDRESS}."
+md webdingo.ca zimbraAutoProvNotificationFromAddress admin@webdingo.ca
+md webdingo.ca zimbraAutoProvNotificationSubject "Nouveau compte WebDingo"
+ms srv-zimbra.webdingo.ca zimbraAutoProvPollingInterval "1m"
+ms srv-zimbra.webdingo.ca +zimbraAutoProvScheduledDomains "webdingo.ca"
