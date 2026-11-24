@@ -59,7 +59,7 @@ flowchart TB
 
 Result: a failure of the primary link cuts neither the Internet nor the workstations' gateway.
 
-How to prove it: [HSRP failover tests](tests-bascule-hsrp.md) (in French).
+How to prove it: [HSRP failover tests](tests-bascule-hsrp.en.md).
 
 ## Procedure (for each device)
 

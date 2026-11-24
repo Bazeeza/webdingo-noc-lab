@@ -85,7 +85,7 @@ flowchart TB
 | [6. Grafana](06-dashboards-grafana/) | Zabbix plugin, dashboards |
 | [7. Automation](07-automation-python/) | Zabbix to GLPI to Zimbra, Python scripts |
 | [8. Incident runbooks](08-runbooks/) | What to do when an alert fires: check, act, escalate |
-| [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.md) | Proving redundancy: link down, router powered off |
+| [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.en.md) | Proving redundancy: link down, router powered off |
 
 ## Alert pipeline
 
