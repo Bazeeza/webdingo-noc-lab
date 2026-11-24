@@ -1,6 +1,7 @@
 # WebDingo NOC Lab
 
-Français · [English version](README.en.md)
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
 
 **Infrastructure réseau redondante et supervision en haute disponibilité**
 
