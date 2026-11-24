@@ -1,5 +1,8 @@
 # 1. Réseau Cisco : VLAN, HSRP et double accès Internet
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 ## Objectifs réseau
 
 - Séparer le trafic du LAN interne (serveurs, `192.168.5.0/24`) et celui des utilisateurs (`192.168.6.0/24`).

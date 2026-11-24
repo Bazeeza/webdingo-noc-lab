@@ -14,7 +14,7 @@ Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra
 | Level | Advanced |
 | Contents | One folder per service (README, configurations, screenshots), HSRP failover tests, incident runbooks, Python scripts, secret-scanning CI |
 | Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.md), in French) |
-| Start here | [1. Cisco network](01-network-cisco/README.md) |
+| Start here | [1. Cisco network](01-network-cisco/README.en.md) |
 
 Capstone project of a three-year IT technology diploma (networking option), built by a team of
 three. We were responsible for every network system of a fictional company, **WebDingo
@@ -77,7 +77,7 @@ flowchart TB
 
 | Step | Content |
 |---|---|
-| [1. Cisco network](01-network-cisco/) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
+| [1. Cisco network](01-network-cisco/README.en.md) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
 | [2. AD, DNS, DHCP](02-identity-ad/) | Domain controller, `webdingo.ca` zone, DHCP scopes |
 | [3. Zimbra](03-mail-zimbra/) | Email, AD integration, automatic account provisioning |
 | [4. GLPI](04-itsm-glpi/) | Tickets, inventory, AD (LDAP) login |
@@ -129,7 +129,7 @@ Each folder has its own README, configurations and screenshots:
 
 | Folder | README |
 |---|---|
-| `01-network-cisco/` | [01-network-cisco/README.md](01-network-cisco/README.md) |
+| `01-network-cisco/` | [01-network-cisco/README.en.md](01-network-cisco/README.en.md) |
 | `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
 | `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
 | `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
