@@ -1,5 +1,8 @@
 # Runbooks d'incident
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 Que faire quand une alerte sonne. Chaque fiche suit le même ordre : **ce que ça veut dire,
 l'impact, vérifier, agir, escalader**. Le ticket GLPI est créé automatiquement pour les
 alertes *High* ; le technicien y note chaque étape, puis le ferme avec la cause trouvée.

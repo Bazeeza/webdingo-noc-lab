@@ -1,10 +1,20 @@
 # WebDingo NOC Lab
 
-[Version française](README.md) · English
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
 
 **Redundant network infrastructure and high-availability monitoring**
 
 Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra · Python
+
+| Item | Details |
+|---|---|
+| Goal | Design the redundant network and the network operations center (NOC) of a fictional company: see outages coming, alert automatically and keep a record of every incident |
+| Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), high-availability Zabbix, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
+| Level | Advanced |
+| Contents | One folder per service (README, configurations, screenshots), HSRP failover tests, incident runbooks, Python scripts, secret-scanning CI |
+| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.md), in French) |
+| Start here | [1. Cisco network](01-network-cisco/README.en.md) |
 
 Capstone project of a three-year IT technology diploma (networking option), built by a team of
 three. We were responsible for every network system of a fictional company, **WebDingo
@@ -67,15 +77,15 @@ flowchart TB
 
 | Step | Content |
 |---|---|
-| [1. Cisco network](01-network-cisco/) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
+| [1. Cisco network](01-network-cisco/README.en.md) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
 | [2. AD, DNS, DHCP](02-identity-ad/) | Domain controller, `webdingo.ca` zone, DHCP scopes |
 | [3. Zimbra](03-mail-zimbra/) | Email, AD integration, automatic account provisioning |
 | [4. GLPI](04-itsm-glpi/) | Tickets, inventory, AD (LDAP) login |
 | [5. Zabbix](05-monitoring-zabbix/) | High availability, metrics, thresholds, triggers |
 | [6. Grafana](06-dashboards-grafana/) | Zabbix plugin, dashboards |
 | [7. Automation](07-automation-python/) | Zabbix to GLPI to Zimbra, Python scripts |
-| [8. Incident runbooks](08-runbooks/) | What to do when an alert fires: check, act, escalate |
-| [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.md) | Proving redundancy: link down, router powered off |
+| [8. Incident runbooks](08-runbooks/README.en.md) | What to do when an alert fires: check, act, escalate |
+| [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.en.md) | Proving redundancy: link down, router powered off |
 
 ## Alert pipeline
 
@@ -91,6 +101,42 @@ flowchart LR
     D -->|SMTP| E[Zimbra]
     E --> F[Network team]
 ```
+
+## Repository contents
+
+```text
+webdingo-noc-lab/
+├── 01-network-cisco/          HSRP routers, switch, VLANs, NAT, SNMP
+│   ├── configs/               routeur1.cfg, routeur2.cfg, switch.cfg
+│   └── tests-bascule-hsrp.md  HSRP failover tests: link down, router powered off
+├── 02-identity-ad/            Active Directory, DNS, DHCP  (images/)
+├── 03-mail-zimbra/            email, automatic account provisioning  (configs/, images/)
+├── 04-itsm-glpi/              tickets, inventory, LDAP login  (images/)
+├── 05-monitoring-zabbix/      high availability, metrics, thresholds, triggers  (images/)
+├── 06-dashboards-grafana/     dashboards  (images/)
+├── 07-automation-python/      Zabbix -> GLPI scripts and AD synchronization
+├── 08-runbooks/               incident procedures for each alert
+├── .github/                   CI: Python compilation, secret detection, Markdown links
+├── .env.example               variables to fill in for the scripts (the real .env is never published)
+├── CHANGELOG.md               changelog (in French)
+├── SECURITY.md                lab scope and how to report a problem (in French)
+├── LICENSE                    MIT licence
+├── README.md                  French version
+└── README.en.md               English version (this file)
+```
+
+Each folder has its own README, configurations and screenshots:
+
+| Folder | README |
+|---|---|
+| `01-network-cisco/` | [01-network-cisco/README.en.md](01-network-cisco/README.en.md) |
+| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
+| `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
+| `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
+| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
+| `06-dashboards-grafana/` | [06-dashboards-grafana/README.md](06-dashboards-grafana/README.md) |
+| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `08-runbooks/` | [08-runbooks/README.en.md](08-runbooks/README.en.md) |
 
 ## What I learned
 

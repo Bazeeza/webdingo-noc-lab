@@ -1,10 +1,20 @@
 # WebDingo NOC Lab
 
-Français · [English version](README.en.md)
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
 
 **Infrastructure réseau redondante et supervision en haute disponibilité**
 
 Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra · Python
+
+| Élément | Contenu |
+|---|---|
+| Objectif | Concevoir le réseau redondant et le centre de supervision (NOC) d'une entreprise fictive : voir venir les pannes, alerter automatiquement et tracer chaque incident |
+| Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), Zabbix en haute disponibilité, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
+| Niveau | Avancé |
+| Contenu | Un dossier par service (README, configurations, captures), tests de bascule HSRP, runbooks d'incident, scripts Python, CI anti-secrets |
+| Statut | Terminé (version 1.0.0 publiée le 2026-11-22, voir le [journal des modifications](CHANGELOG.md)) |
+| Lire en premier | [1. Réseau Cisco](01-network-cisco/README.md) |
 
 Projet intégrateur de fin de DEC en Techniques de l'informatique (réseautique), réalisé en
 équipe de trois. Notre équipe était responsable de tous les systèmes réseau de l'entreprise
@@ -94,19 +104,39 @@ flowchart LR
 
 ## Contenu du dépôt
 
-```
-01-network-cisco/       routeurs HSRP, switch, VLAN, NAT, SNMP  (configs/)
-02-identity-ad/         Active Directory, DNS, DHCP
-03-mail-zimbra/         messagerie, création automatique des comptes  (configs/)
-04-itsm-glpi/           tickets, inventaire, connexion LDAP
-05-monitoring-zabbix/   haute disponibilité, métriques, seuils, déclencheurs
-06-dashboards-grafana/  tableaux de bord
-07-automation-python/   scripts Zabbix -> GLPI et synchronisation AD
-08-runbooks/            procédures d'incident pour chaque alerte
-.env.example            variables à remplir pour les scripts (le vrai .env n'est jamais publié)
+```text
+webdingo-noc-lab/
+├── 01-network-cisco/          routeurs HSRP, switch, VLAN, NAT, SNMP
+│   ├── configs/               routeur1.cfg, routeur2.cfg, switch.cfg
+│   └── tests-bascule-hsrp.md  tests de bascule HSRP : lien coupé, routeur éteint
+├── 02-identity-ad/            Active Directory, DNS, DHCP  (images/)
+├── 03-mail-zimbra/            messagerie, création automatique des comptes  (configs/, images/)
+├── 04-itsm-glpi/              tickets, inventaire, connexion LDAP  (images/)
+├── 05-monitoring-zabbix/      haute disponibilité, métriques, seuils, déclencheurs  (images/)
+├── 06-dashboards-grafana/     tableaux de bord  (images/)
+├── 07-automation-python/      scripts Zabbix -> GLPI et synchronisation AD
+├── 08-runbooks/               procédures d'incident pour chaque alerte
+├── .github/                   CI : compilation Python, détection de secrets, liens Markdown
+├── .env.example               variables à remplir pour les scripts (le vrai .env n'est jamais publié)
+├── CHANGELOG.md               journal des modifications
+├── SECURITY.md                portée du laboratoire et signalement d'un problème
+├── LICENSE                    licence MIT
+├── README.md                  version française (ce fichier)
+└── README.en.md               version anglaise
 ```
 
-Chaque dossier a son propre README, ses configurations et ses captures d'écran.
+Chaque dossier a son propre README, ses configurations et ses captures d'écran :
+
+| Dossier | README |
+|---|---|
+| `01-network-cisco/` | [01-network-cisco/README.md](01-network-cisco/README.md) |
+| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
+| `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
+| `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
+| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
+| `06-dashboards-grafana/` | [06-dashboards-grafana/README.md](06-dashboards-grafana/README.md) |
+| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `08-runbooks/` | [08-runbooks/README.md](08-runbooks/README.md) |
 
 ## Ce que ce projet m'a appris
 

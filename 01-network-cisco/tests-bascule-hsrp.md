@@ -1,5 +1,8 @@
 # Tests de bascule HSRP
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](tests-bascule-hsrp.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](tests-bascule-hsrp.en.md)
+
 Une redondance qui n'a jamais été testée n'est pas une redondance. Cette page décrit comment
 prouver que le réseau survit à la perte du lien Internet principal, puis à la perte complète
 du routeur principal, et ce qu'on doit observer à chaque étape.
