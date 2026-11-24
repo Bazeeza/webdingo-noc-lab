@@ -102,6 +102,42 @@ flowchart LR
     E --> F[Network team]
 ```
 
+## Repository contents
+
+```text
+webdingo-noc-lab/
+├── 01-network-cisco/          HSRP routers, switch, VLANs, NAT, SNMP
+│   ├── configs/               routeur1.cfg, routeur2.cfg, switch.cfg
+│   └── tests-bascule-hsrp.md  HSRP failover tests: link down, router powered off
+├── 02-identity-ad/            Active Directory, DNS, DHCP  (images/)
+├── 03-mail-zimbra/            email, automatic account provisioning  (configs/, images/)
+├── 04-itsm-glpi/              tickets, inventory, LDAP login  (images/)
+├── 05-monitoring-zabbix/      high availability, metrics, thresholds, triggers  (images/)
+├── 06-dashboards-grafana/     dashboards  (images/)
+├── 07-automation-python/      Zabbix -> GLPI scripts and AD synchronization
+├── 08-runbooks/               incident procedures for each alert
+├── .github/                   CI: Python compilation, secret detection, Markdown links
+├── .env.example               variables to fill in for the scripts (the real .env is never published)
+├── CHANGELOG.md               changelog (in French)
+├── SECURITY.md                lab scope and how to report a problem (in French)
+├── LICENSE                    MIT licence
+├── README.md                  French version
+└── README.en.md               English version (this file)
+```
+
+Each folder has its own README, configurations and screenshots:
+
+| Folder | README |
+|---|---|
+| `01-network-cisco/` | [01-network-cisco/README.md](01-network-cisco/README.md) |
+| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
+| `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
+| `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
+| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
+| `06-dashboards-grafana/` | [06-dashboards-grafana/README.md](06-dashboards-grafana/README.md) |
+| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `08-runbooks/` | [08-runbooks/README.md](08-runbooks/README.md) |
+
 ## What I learned
 
 - Redundancy is only complete when **everything** uses it: HSRP is useless if DHCP hands out a

@@ -104,19 +104,39 @@ flowchart LR
 
 ## Contenu du dépôt
 
-```
-01-network-cisco/       routeurs HSRP, switch, VLAN, NAT, SNMP  (configs/)
-02-identity-ad/         Active Directory, DNS, DHCP
-03-mail-zimbra/         messagerie, création automatique des comptes  (configs/)
-04-itsm-glpi/           tickets, inventaire, connexion LDAP
-05-monitoring-zabbix/   haute disponibilité, métriques, seuils, déclencheurs
-06-dashboards-grafana/  tableaux de bord
-07-automation-python/   scripts Zabbix -> GLPI et synchronisation AD
-08-runbooks/            procédures d'incident pour chaque alerte
-.env.example            variables à remplir pour les scripts (le vrai .env n'est jamais publié)
+```text
+webdingo-noc-lab/
+├── 01-network-cisco/          routeurs HSRP, switch, VLAN, NAT, SNMP
+│   ├── configs/               routeur1.cfg, routeur2.cfg, switch.cfg
+│   └── tests-bascule-hsrp.md  tests de bascule HSRP : lien coupé, routeur éteint
+├── 02-identity-ad/            Active Directory, DNS, DHCP  (images/)
+├── 03-mail-zimbra/            messagerie, création automatique des comptes  (configs/, images/)
+├── 04-itsm-glpi/              tickets, inventaire, connexion LDAP  (images/)
+├── 05-monitoring-zabbix/      haute disponibilité, métriques, seuils, déclencheurs  (images/)
+├── 06-dashboards-grafana/     tableaux de bord  (images/)
+├── 07-automation-python/      scripts Zabbix -> GLPI et synchronisation AD
+├── 08-runbooks/               procédures d'incident pour chaque alerte
+├── .github/                   CI : compilation Python, détection de secrets, liens Markdown
+├── .env.example               variables à remplir pour les scripts (le vrai .env n'est jamais publié)
+├── CHANGELOG.md               journal des modifications
+├── SECURITY.md                portée du laboratoire et signalement d'un problème
+├── LICENSE                    licence MIT
+├── README.md                  version française (ce fichier)
+└── README.en.md               version anglaise
 ```
 
-Chaque dossier a son propre README, ses configurations et ses captures d'écran.
+Chaque dossier a son propre README, ses configurations et ses captures d'écran :
+
+| Dossier | README |
+|---|---|
+| `01-network-cisco/` | [01-network-cisco/README.md](01-network-cisco/README.md) |
+| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
+| `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
+| `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
+| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
+| `06-dashboards-grafana/` | [06-dashboards-grafana/README.md](06-dashboards-grafana/README.md) |
+| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `08-runbooks/` | [08-runbooks/README.md](08-runbooks/README.md) |
 
 ## Ce que ce projet m'a appris
 
