@@ -7,6 +7,15 @@
 
 Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra · Python
 
+| Item | Details |
+|---|---|
+| Goal | Design the redundant network and the network operations center (NOC) of a fictional company: see outages coming, alert automatically and keep a record of every incident |
+| Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), high-availability Zabbix, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
+| Level | Advanced |
+| Contents | One folder per service (README, configurations, screenshots), HSRP failover tests, incident runbooks, Python scripts, secret-scanning CI |
+| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.md), in French) |
+| Start here | [1. Cisco network](01-network-cisco/README.md) |
+
 Capstone project of a three-year IT technology diploma (networking option), built by a team of
 three. We were responsible for every network system of a fictional company, **WebDingo
 Solutions Inc.**: a redundant Cisco network, core services (Active Directory, DNS, DHCP, email)

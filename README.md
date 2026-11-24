@@ -7,6 +7,15 @@
 
 Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra · Python
 
+| Élément | Contenu |
+|---|---|
+| Objectif | Concevoir le réseau redondant et le centre de supervision (NOC) d'une entreprise fictive : voir venir les pannes, alerter automatiquement et tracer chaque incident |
+| Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), Zabbix en haute disponibilité, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
+| Niveau | Avancé |
+| Contenu | Un dossier par service (README, configurations, captures), tests de bascule HSRP, runbooks d'incident, scripts Python, CI anti-secrets |
+| Statut | Terminé (version 1.0.0 publiée le 2026-11-22, voir le [journal des modifications](CHANGELOG.md)) |
+| Lire en premier | [1. Réseau Cisco](01-network-cisco/README.md) |
+
 Projet intégrateur de fin de DEC en Techniques de l'informatique (réseautique), réalisé en
 équipe de trois. Notre équipe était responsable de tous les systèmes réseau de l'entreprise
 fictive **WebDingo Solutions Inc.** : un réseau Cisco redondant, les services de base
