@@ -83,7 +83,7 @@ flowchart TB
 | [4. GLPI](04-itsm-glpi/README.en.md) | Tickets, inventory, AD (LDAP) login |
 | [5. Zabbix](05-monitoring-zabbix/README.en.md) | High availability, metrics, thresholds, triggers |
 | [6. Grafana](06-dashboards-grafana/README.en.md) | Zabbix plugin, dashboards |
-| [7. Automation](07-automation-python/) | Zabbix to GLPI to Zimbra, Python scripts |
+| [7. Automation](07-automation-python/README.en.md) | Zabbix to GLPI to Zimbra, Python scripts |
 | [8. Incident runbooks](08-runbooks/README.en.md) | What to do when an alert fires: check, act, escalate |
 | [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.en.md) | Proving redundancy: link down, router powered off |
 
@@ -135,7 +135,7 @@ Each folder has its own README, configurations and screenshots:
 | `04-itsm-glpi/` | [04-itsm-glpi/README.en.md](04-itsm-glpi/README.en.md) |
 | `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.en.md](05-monitoring-zabbix/README.en.md) |
 | `06-dashboards-grafana/` | [06-dashboards-grafana/README.en.md](06-dashboards-grafana/README.en.md) |
-| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `07-automation-python/` | [07-automation-python/README.en.md](07-automation-python/README.en.md) |
 | `08-runbooks/` | [08-runbooks/README.en.md](08-runbooks/README.en.md) |
 
 ## What I learned
