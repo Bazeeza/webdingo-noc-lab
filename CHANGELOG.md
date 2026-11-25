@@ -1,5 +1,8 @@
 # Journal des modifications
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](CHANGELOG.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](CHANGELOG.en.md)
+
 ## 1.0.0 (2026-11-22)
 
 Première publication du projet intégrateur.

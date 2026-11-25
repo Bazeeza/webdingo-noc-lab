@@ -13,7 +13,7 @@ Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra
 | Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), high-availability Zabbix, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
 | Level | Advanced |
 | Contents | One folder per service (README, configurations, screenshots), HSRP failover tests, incident runbooks, Python scripts, secret-scanning CI |
-| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.md), in French) |
+| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.en.md)) |
 | Start here | [1. Cisco network](01-network-cisco/README.en.md) |
 
 Capstone project of a three-year IT technology diploma (networking option), built by a team of
@@ -73,17 +73,17 @@ flowchart TB
 | Python scripts | srv-python | Ubuntu 22.04 | 192.168.5.16 |
 | Grafana | dingo-grafana | Ubuntu 22.04 | 192.168.5.17 |
 
-## Documentation (in French)
+## Documentation
 
 | Step | Content |
 |---|---|
 | [1. Cisco network](01-network-cisco/README.en.md) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
-| [2. AD, DNS, DHCP](02-identity-ad/) | Domain controller, `webdingo.ca` zone, DHCP scopes |
-| [3. Zimbra](03-mail-zimbra/) | Email, AD integration, automatic account provisioning |
-| [4. GLPI](04-itsm-glpi/) | Tickets, inventory, AD (LDAP) login |
-| [5. Zabbix](05-monitoring-zabbix/) | High availability, metrics, thresholds, triggers |
-| [6. Grafana](06-dashboards-grafana/) | Zabbix plugin, dashboards |
-| [7. Automation](07-automation-python/) | Zabbix to GLPI to Zimbra, Python scripts |
+| [2. AD, DNS, DHCP](02-identity-ad/README.en.md) | Domain controller, `webdingo.ca` zone, DHCP scopes |
+| [3. Zimbra](03-mail-zimbra/README.en.md) | Email, AD integration, automatic account provisioning |
+| [4. GLPI](04-itsm-glpi/README.en.md) | Tickets, inventory, AD (LDAP) login |
+| [5. Zabbix](05-monitoring-zabbix/README.en.md) | High availability, metrics, thresholds, triggers |
+| [6. Grafana](06-dashboards-grafana/README.en.md) | Zabbix plugin, dashboards |
+| [7. Automation](07-automation-python/README.en.md) | Zabbix to GLPI to Zimbra, Python scripts |
 | [8. Incident runbooks](08-runbooks/README.en.md) | What to do when an alert fires: check, act, escalate |
 | [HSRP failover tests](01-network-cisco/tests-bascule-hsrp.en.md) | Proving redundancy: link down, router powered off |
 
@@ -118,8 +118,10 @@ webdingo-noc-lab/
 ├── 08-runbooks/               incident procedures for each alert
 ├── .github/                   CI: Python compilation, secret detection, Markdown links
 ├── .env.example               variables to fill in for the scripts (the real .env is never published)
-├── CHANGELOG.md               changelog (in French)
-├── SECURITY.md                lab scope and how to report a problem (in French)
+├── CHANGELOG.md               changelog (French version)
+├── CHANGELOG.en.md            changelog (English version)
+├── SECURITY.md                lab scope and how to report a problem (French version)
+├── SECURITY.en.md             lab scope and how to report a problem (English version)
 ├── LICENSE                    MIT licence
 ├── README.md                  French version
 └── README.en.md               English version (this file)
@@ -130,12 +132,12 @@ Each folder has its own README, configurations and screenshots:
 | Folder | README |
 |---|---|
 | `01-network-cisco/` | [01-network-cisco/README.en.md](01-network-cisco/README.en.md) |
-| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
-| `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
-| `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
-| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
-| `06-dashboards-grafana/` | [06-dashboards-grafana/README.md](06-dashboards-grafana/README.md) |
-| `07-automation-python/` | [07-automation-python/README.md](07-automation-python/README.md) |
+| `02-identity-ad/` | [02-identity-ad/README.en.md](02-identity-ad/README.en.md) |
+| `03-mail-zimbra/` | [03-mail-zimbra/README.en.md](03-mail-zimbra/README.en.md) |
+| `04-itsm-glpi/` | [04-itsm-glpi/README.en.md](04-itsm-glpi/README.en.md) |
+| `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.en.md](05-monitoring-zabbix/README.en.md) |
+| `06-dashboards-grafana/` | [06-dashboards-grafana/README.en.md](06-dashboards-grafana/README.en.md) |
+| `07-automation-python/` | [07-automation-python/README.en.md](07-automation-python/README.en.md) |
 | `08-runbooks/` | [08-runbooks/README.en.md](08-runbooks/README.en.md) |
 
 ## What I learned

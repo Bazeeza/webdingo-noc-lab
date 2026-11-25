@@ -1,5 +1,8 @@
 # 7. Automatisation et gestion des incidents (Python)
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 Pour répondre aux exigences de réactivité de WebDingo, une couche d'automatisation tourne sur
 une machine virtuelle dédiée (`srv-python`, 192.168.5.16). Elle assure deux fonctions :
 la synchronisation des utilisateurs et la gestion automatique des incidents.
@@ -9,13 +12,13 @@ la synchronisation des utilisateurs et la gestion automatique des incidents.
 ```mermaid
 flowchart TB
     subgraph P1[Phase 1 : détection]
-      A[1. Routeur : panne ou seuil dépassé] -- SNMP / ping --> B[2. Serveur Zabbix]
-      B -- déclencheur High ou Disaster --> C{3. Script Python}
+      A[Étape 1 : routeur en panne ou seuil dépassé] -- SNMP / ping --> B[Étape 2 : serveur Zabbix]
+      B -- déclencheur High ou Disaster --> C{Étape 3 : script Python}
     end
     subgraph P2[Phase 2 : ticket et notification]
-      C -- API REST JSON --> D[4. Serveur GLPI]
-      D -- SMTP --> E[5. Serveur Zimbra]
-      E -- courriel --> F[6. Administrateur réseau]
+      C -- API REST JSON --> D[Étape 4 : serveur GLPI]
+      D -- SMTP --> E[Étape 5 : serveur Zimbra]
+      E -- courriel --> F[Étape 6 : administrateur réseau]
     end
 ```
 

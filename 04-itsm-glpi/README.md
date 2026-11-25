@@ -1,5 +1,8 @@
 # 4. GLPI : gestion des incidents et inventaire
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 GLPI est l'outil utilisé par WebDingo pour gérer les tickets d'incidents (pannes, demandes des
 usagers) et centraliser l'inventaire des serveurs et équipements. Il reçoit aussi
 automatiquement des tickets quand Zabbix détecte une alerte critique (voir

@@ -1,5 +1,8 @@
 # 2. Active Directory, DNS et DHCP (Windows Server 2022)
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 Cette section décrit l'infrastructure Windows :
 
 - **Active Directory** pour les comptes utilisateurs et les groupes ;
