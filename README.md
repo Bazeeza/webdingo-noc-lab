@@ -119,6 +119,7 @@ webdingo-noc-lab/
 ├── .github/                   CI : compilation Python, détection de secrets, liens Markdown
 ├── .env.example               variables à remplir pour les scripts (le vrai .env n'est jamais publié)
 ├── CHANGELOG.md               journal des modifications
+├── CHANGELOG.en.md            journal des modifications (version anglaise)
 ├── SECURITY.md                portée du laboratoire et signalement d'un problème
 ├── LICENSE                    licence MIT
 ├── README.md                  version française (ce fichier)

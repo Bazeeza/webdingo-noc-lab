@@ -13,7 +13,7 @@ Cisco HSRP · VLAN · Zabbix HA · Grafana · GLPI · Active Directory · Zimbra
 | Technologies | Cisco IOS (HSRP, VLAN, 802.1Q, NAT, SNMP), Windows Server 2022 (AD, DNS, DHCP), high-availability Zabbix, Grafana, GLPI, Zimbra, Python, AlmaLinux 9, Ubuntu 22.04 |
 | Level | Advanced |
 | Contents | One folder per service (README, configurations, screenshots), HSRP failover tests, incident runbooks, Python scripts, secret-scanning CI |
-| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.md), in French) |
+| Status | Completed (version 1.0.0 published on 2026-11-22, see the [changelog](CHANGELOG.en.md)) |
 | Start here | [1. Cisco network](01-network-cisco/README.en.md) |
 
 Capstone project of a three-year IT technology diploma (networking option), built by a team of
@@ -118,7 +118,8 @@ webdingo-noc-lab/
 ├── 08-runbooks/               incident procedures for each alert
 ├── .github/                   CI: Python compilation, secret detection, Markdown links
 ├── .env.example               variables to fill in for the scripts (the real .env is never published)
-├── CHANGELOG.md               changelog (in French)
+├── CHANGELOG.md               changelog (French version)
+├── CHANGELOG.en.md            changelog (English version)
 ├── SECURITY.md                lab scope and how to report a problem (in French)
 ├── LICENSE                    MIT licence
 ├── README.md                  French version
