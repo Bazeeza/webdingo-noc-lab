@@ -78,7 +78,7 @@ flowchart TB
 | Step | Content |
 |---|---|
 | [1. Cisco network](01-network-cisco/README.en.md) | Cabling, VLANs, HSRP, NAT, SNMP, configurations |
-| [2. AD, DNS, DHCP](02-identity-ad/) | Domain controller, `webdingo.ca` zone, DHCP scopes |
+| [2. AD, DNS, DHCP](02-identity-ad/README.en.md) | Domain controller, `webdingo.ca` zone, DHCP scopes |
 | [3. Zimbra](03-mail-zimbra/) | Email, AD integration, automatic account provisioning |
 | [4. GLPI](04-itsm-glpi/) | Tickets, inventory, AD (LDAP) login |
 | [5. Zabbix](05-monitoring-zabbix/) | High availability, metrics, thresholds, triggers |
@@ -130,7 +130,7 @@ Each folder has its own README, configurations and screenshots:
 | Folder | README |
 |---|---|
 | `01-network-cisco/` | [01-network-cisco/README.en.md](01-network-cisco/README.en.md) |
-| `02-identity-ad/` | [02-identity-ad/README.md](02-identity-ad/README.md) |
+| `02-identity-ad/` | [02-identity-ad/README.en.md](02-identity-ad/README.en.md) |
 | `03-mail-zimbra/` | [03-mail-zimbra/README.md](03-mail-zimbra/README.md) |
 | `04-itsm-glpi/` | [04-itsm-glpi/README.md](04-itsm-glpi/README.md) |
 | `05-monitoring-zabbix/` | [05-monitoring-zabbix/README.md](05-monitoring-zabbix/README.md) |
