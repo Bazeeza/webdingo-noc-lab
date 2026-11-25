@@ -1,5 +1,8 @@
 # 6. Tableaux de bord Grafana
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 Grafana lit les données de Zabbix et les affiche en tableaux de bord clairs pour l'équipe réseau.
 
 | Paramètre | Valeur |
