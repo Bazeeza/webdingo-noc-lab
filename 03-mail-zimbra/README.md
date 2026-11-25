@@ -1,5 +1,8 @@
 # 3. Messagerie Zimbra
 
+[![Français](https://img.shields.io/badge/Langue-Français-3fe0a0?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-2b9dff?style=for-the-badge)](README.en.md)
+
 Zimbra sert de serveur de messagerie interne pour WebDingo. Il est utilisé pour recevoir les
 alertes Zabbix par courriel, gérer les boîtes aux lettres des utilisateurs `@webdingo.ca` et
 offrir au client une messagerie centralisée.
