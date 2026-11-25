@@ -73,7 +73,7 @@ flowchart TB
 | Python scripts | srv-python | Ubuntu 22.04 | 192.168.5.16 |
 | Grafana | dingo-grafana | Ubuntu 22.04 | 192.168.5.17 |
 
-## Documentation (in French)
+## Documentation
 
 | Step | Content |
 |---|---|
