@@ -121,6 +121,7 @@ webdingo-noc-lab/
 ├── CHANGELOG.md               journal des modifications
 ├── CHANGELOG.en.md            journal des modifications (version anglaise)
 ├── SECURITY.md                portée du laboratoire et signalement d'un problème
+├── SECURITY.en.md             portée du laboratoire et signalement (version anglaise)
 ├── LICENSE                    licence MIT
 ├── README.md                  version française (ce fichier)
 └── README.en.md               version anglaise

@@ -120,7 +120,8 @@ webdingo-noc-lab/
 ├── .env.example               variables to fill in for the scripts (the real .env is never published)
 ├── CHANGELOG.md               changelog (French version)
 ├── CHANGELOG.en.md            changelog (English version)
-├── SECURITY.md                lab scope and how to report a problem (in French)
+├── SECURITY.md                lab scope and how to report a problem (French version)
+├── SECURITY.en.md             lab scope and how to report a problem (English version)
 ├── LICENSE                    MIT licence
 ├── README.md                  French version
 └── README.en.md               English version (this file)
